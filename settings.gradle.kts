@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "FishCardApp"
+rootProject.name = "FlashCardsApp"
 include(":app")
