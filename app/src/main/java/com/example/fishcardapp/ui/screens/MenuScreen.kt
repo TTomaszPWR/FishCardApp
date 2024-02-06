@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -29,7 +28,6 @@ fun MenuScreen(){
             .padding(start = 30.dp, end = 30.dp, top = 30.dp)
         ) {
             TopBarComponent()
-            Spacer(modifier = Modifier.size(35.dp))
             Column(
                 modifier = Modifier
                     .verticalScroll(rememberScrollState())
@@ -37,7 +35,11 @@ fun MenuScreen(){
             ) {
                 Spacer(modifier = Modifier.size(5.dp))
                 Row {
-                    MenuCardComponent(color = Color(0xFFE7ABDF), image = R.drawable.it_icon, "IT")
+                    MenuCardComponent(
+                        color = Color(0xFFE7ABDF),
+                        image = R.drawable.it_icon,
+                        "IT"
+                    )
                     Spacer(modifier = Modifier.weight(1f))
                     MenuCardComponent(
                         color = Color(0xFFE7ABDF),
